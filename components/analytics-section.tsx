@@ -7,7 +7,7 @@ export default function AnalyticsSection() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Interface mockup */}
-          <div className="bg-gray-50 rounded-xl p-6">
+          <div className="rounded-xl p-6">
             <div className="space-y-6">
               {/* Header */}
               <div>

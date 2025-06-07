@@ -54,7 +54,7 @@ export default function PricingSection() {
   ]
 
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Simple, transparent pricing</h2>

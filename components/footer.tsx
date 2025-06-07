@@ -21,49 +21,49 @@ export default function Footer() {
           {/* Product */}
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Integrations</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">API</a></li>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Features</a></li>
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Pricing</a></li>
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Integrations</a></li>
+              <li><a href="#" className="hover:text-gray-900 transition-colors">API</a></li>
             </ul>
           </div>
 
           {/* Resources */}
           <div>
             <h3 className="font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Support</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Status</a></li>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Documentation</a></li>
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Blog</a></li>
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Support</a></li>
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Status</a></li>
             </ul>
           </div>
 
           {/* Company */}
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms</a></li>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li><a href="#" className="hover:text-gray-900 transition-colors">About</a></li>
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Careers</a></li>
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Privacy</a></li>
+              <li><a href="#" className="hover:text-gray-900 transition-colors">Terms</a></li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-600 text-sm">
             © 2024 JamFlow.ai. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
+            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
               Twitter
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
+            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
               LinkedIn
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
+            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
               GitHub
             </a>
           </div>
