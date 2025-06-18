@@ -27,7 +27,7 @@ export default function Navigation() {
         </div>
         <div className="flex items-center space-x-4">
           <Button variant="ghost">Sign In</Button>
-          <Button className="h-10 text-sm bg-blue-600 hover:bg-blue-700 font-normal rounded-lg">
+          <Button className="h-10 text-sm bg-blue-600 hover:bg-blue-700 font-normal shadow-md rounded-lg">
             Get Started
             <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
           </Button>
