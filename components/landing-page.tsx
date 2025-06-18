@@ -17,11 +17,11 @@ export default function LandingPage() {
       <CompanyLogos />
       
       {/* Analytics Showcase Section */}
-      <section className="py-20 px-4 bg-white">
+      {/* <section className="py-20 px-4 bg-white">
         <div className="container mx-auto">
           <ChatbotAnalytics />
         </div>
-      </section>
+      </section> */}
       
       <DebugLLMAgentsSection />
       <AnalyticsDashboardSection />

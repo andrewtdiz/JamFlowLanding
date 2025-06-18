@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { MessageSquare } from "lucide-react"
+import { ArrowRight, MessageSquare } from "lucide-react"
 
 export default function Navigation() {
   return (
@@ -27,7 +27,10 @@ export default function Navigation() {
         </div>
         <div className="flex items-center space-x-4">
           <Button variant="ghost">Sign In</Button>
-          <Button>Get Started</Button>
+          <Button className="h-10 text-sm bg-blue-500 hover:bg-blue-600 font-normal rounded-lg">
+            Get Started
+            <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
+          </Button>
         </div>
       </div>
     </nav>
