@@ -6,9 +6,9 @@ export default function HeroSection() {
         <section className="py-20 px-4 relative overflow-hidden">
             <div className="container mx-auto relative z-20 flex flex-col md:flex-row items-center gap-12">
                 <div className="md:w-1/2 text-center md:text-left">
-                    {/* <Badge className="mb-4 bg-blue-50 text-blue-700 border-blue-200 transition-shadow hover:shadow-lg hover:shadow-blue-200/70 hover:bg-blue-50 hover:text-blue-700">
-                        🚀 New: Gemini 2.5 Pro Model Available
-                    </Badge> */}
+                    <Badge className="mb-4 bg-blue-50 text-blue-700 border-blue-200 transition-shadow hover:shadow-lg hover:shadow-blue-200/70 hover:bg-blue-50 hover:text-blue-700">
+                        🚀 Gemini 2.5 Pro Now Available!
+                    </Badge>
 
                     <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
                         Refine prompts <br /> and models in seconds
