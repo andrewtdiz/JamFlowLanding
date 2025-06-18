@@ -11,17 +11,17 @@ export default function Navigation() {
           </div>
           <span className="font-bold text-xl">JamFlow.ai</span>
         </div>
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-gray-600 hover:text-gray-900">
+        <div className="hidden md:flex items-center space-x-10">
+          <a href="#" className="text-gray-800 hover:text-gray-900">
             Features
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">
+          <a href="#" className="text-gray-800 hover:text-gray-900">
             Pricing
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">
+          <a href="#" className="text-gray-800 hover:text-gray-900">
             Docs
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">
+          <a href="#" className="text-gray-800 hover:text-gray-900">
             Support
           </a>
         </div>
