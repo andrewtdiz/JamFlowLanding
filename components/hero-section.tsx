@@ -26,9 +26,7 @@ export default function HeroSection() {
                 </Badge>
 
                 <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-                    Take your AI chatbot
-                    <br />
-                    to the next level
+                    Bobbity boopy, I made a poopy
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                     Build, deploy, and scale intelligent chatbots with JamFlow.ai's advanced AI platform. Integrate seamlessly with your
