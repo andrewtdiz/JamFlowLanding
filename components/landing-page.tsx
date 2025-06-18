@@ -14,7 +14,7 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <HeroSection />
-      <CompanyLogos />
+      {/* <CompanyLogos /> */}
 
       {/* Analytics Showcase Section */}
       <section className="py-20 px-4 bg-white">
