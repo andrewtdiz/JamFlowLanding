@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export default function HeroSection() {
@@ -17,8 +18,12 @@ export default function HeroSection() {
                         The fastest way to compare outputs and improve prompts for LLM-based tools.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
-                        <Button size="lg" className="h-14 text-xl bg-blue-600 hover:bg-blue-700 font-normal rounded-full">
+                        <Button
+                            size="lg"
+                            className="group h-14 text-xl bg-blue-600 hover:bg-blue-700 font-normal rounded-full"
+                        >
                             Start Prompting
+                            <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
                         </Button>
                     </div>
                 </div>
