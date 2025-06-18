@@ -35,11 +35,8 @@ export default function HeroSection() {
                     existing workflow.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                        Start Building Free
-                    </Button>
-                    <Button size="lg" variant="outline">
-                        View Demo
+                    <Button size="lg" className="h-14 text-xl bg-blue-600 hover:bg-blue-700 font-semibold">
+                        Start Prompting
                     </Button>
                 </div>
 
