@@ -21,7 +21,7 @@ export default function HeroSection() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
                         <Button
                             size="lg"
-                            className="group h-14 text-xl bg-blue-600 hover:bg-blue-700 font-normal rounded-full"
+                            className="group h-14 text-lg bg-blue-600 hover:bg-blue-700 font-normal rounded-full"
                         >
                             Start Prompting
                             <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />

@@ -9,6 +9,7 @@ import PromptFeaturesSection from "./prompt-features-section"
 import FeaturesSection from "./features-section"
 import PricingSection from "./pricing-section"
 import Footer from "./footer"
+import FAQSection from "./faq"
 
 export default function LandingPage() {
   return (
@@ -16,7 +17,7 @@ export default function LandingPage() {
       <Navigation />
       <HeroSection />
       {/* <CompanyLogos /> */}
-
+      
       {/* Analytics Showcase Section */}
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto">
@@ -24,6 +25,7 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <FAQSection />
       <DebugLLMAgentsSection />
       <AnalyticsDashboardSection />
       <IteratePromptsSection />
