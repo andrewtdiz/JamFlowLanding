@@ -12,10 +12,11 @@ export default function HeroSection() {
                     </Badge>
 
                     <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-                        Refine prompts <br /> and models in seconds
+                        Make better prompts, faster
                     </h1>
                     <p className="text-xl text-gray-600 mb-8 max-w-2xl md:mx-0 mx-auto">
-                        The fastest way to compare outputs and improve prompts for LLM-based tools.
+                        Compare across models and prompts in one seemless interface,<br />
+                        rapidly iterate with JamFlow.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
                         <Button
