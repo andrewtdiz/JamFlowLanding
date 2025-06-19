@@ -5,6 +5,7 @@ import ChatbotAnalytics from "./chatbot-analytics"
 import DebugLLMAgentsSection from "./debug-llm-agents-section"
 import AnalyticsDashboardSection from "./analytics-dashboard-section"
 import IteratePromptsSection from "./iterate-prompts-section"
+import PromptFeaturesSection from "./prompt-features-section"
 import FeaturesSection from "./features-section"
 import PricingSection from "./pricing-section"
 import Footer from "./footer"
@@ -26,6 +27,7 @@ export default function LandingPage() {
       <DebugLLMAgentsSection />
       <AnalyticsDashboardSection />
       <IteratePromptsSection />
+      <PromptFeaturesSection />
       <FeaturesSection />
       <PricingSection />
       <Footer />
