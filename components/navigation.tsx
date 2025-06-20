@@ -9,7 +9,7 @@ export default function Navigation() {
           <div className="w-8 h-8 rounded-lg flex items-center justify-center">
             <img src="/logo192.png" alt="JamFlow.ai" className="w-8 h-8 rounded-lg" />
           </div>
-          <span className="font-bold text-xl">JamFlow.ai</span>
+          <span className="font-bold text-xl">JamFlow</span>
         </div>
         <div className="hidden md:flex items-center space-x-10">
           <a href="#" className="text-gray-800 hover:text-gray-900">

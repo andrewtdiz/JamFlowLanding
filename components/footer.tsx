@@ -11,7 +11,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg flex items-center justify-center">
                 <img src="/logo192.png" alt="JamFlow.ai" className="w-8 h-8 rounded-lg" />
               </div>
-              <span className="font-bold text-xl">JamFlow.ai</span>
+              <span className="font-bold text-xl">JamFlow</span>
             </div>
             <p className="text-gray-600 text-sm">
               Building the future of conversational AI with advanced chatbot solutions for modern businesses.

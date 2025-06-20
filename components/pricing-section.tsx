@@ -9,7 +9,7 @@ export default function PricingSection() {
       name: "Free",
       price: "$0",
       period: "/month",
-      description: "Great for improving a prompt or trying JamFlow for the first time!",
+      description: "For simple prompt improvements or trying JamFlow for the first time!",
       credits: {
         dailyTests: "20",
         llmCredits: "5,000"
@@ -22,10 +22,10 @@ export default function PricingSection() {
       popular: false
     },
     {
-      name: "Basic",
+      name: "Premium",
       price: "$9.95",
       period: "/month",
-      description: "Best for building prompts for agentic products and workflows",
+      description: "For building prompts for agentic products and workflows",
       credits: {
         dailyTests: "1,000",
         llmCredits: "Unlimited*"
@@ -35,13 +35,13 @@ export default function PricingSection() {
         "Access to thinking models",
         "View usage data"
       ],
-      popular: false
+      popular: true
     },
     {
       name: "Pro",
       price: "$29.95",
       period: "/month",
-      description: "Perfect for high-frequency users and for building complex production-grade AI apps",
+      description: "For high-frequency users and for building complex production-grade AI apps",
       credits: {
         dailyTests: "Unlimited",
         llmCredits: "Unlimited*"
@@ -60,17 +60,21 @@ export default function PricingSection() {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-4">Pricing</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Choose the perfect plan for your needs. Upgrade or downgrade at any time.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className="relative bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-lg transition-shadow h-full flex flex-col"
-            >
+              className={`relative bg-white border-2 ${plan.popular ? 'border-blue-500 shadow-lg scale-105' : 'border-gray-200'} rounded-3xl p-8 shadow-sm hover:shadow-lg transition-shadow h-full flex flex-col`}>
+              {plan.popular && (
+                <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white">
+                  Most Popular
+                </Badge>
+              )}
               <CardHeader className="text-left p-0 mb-8">
                 <CardTitle className="text-3xl font-medium mb-4">{plan.name}</CardTitle>
                 <div className="mb-6">
