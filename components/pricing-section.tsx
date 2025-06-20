@@ -6,48 +6,47 @@ import { Check } from "lucide-react"
 export default function PricingSection() {
   const plans = [
     {
-      name: "Starter",
-      price: "$29",
+      name: "Free",
+      price: "$0",
       period: "/month",
-      description: "Perfect for small teams and startups",
+      description:
+        "Great for improving a prompt or trying JamFlow for the first time!",
       features: [
-        "Up to 1,000 conversations/month",
-        "Basic analytics",
-        "Email support",
-        "Standard AI models",
-        "API access"
+        "Daily Tests: 20",
+        "LLM Credits: 5,000",
+        "Compare up to 4 prompt sets at a time",
+        "Access to non-thinking models",
+        "View usage data"
       ],
       popular: false
     },
     {
-      name: "Professional", 
-      price: "$99",
+      name: "Basic",
+      price: "$9.95",
       period: "/month",
-      description: "For growing businesses with advanced needs",
+      description:
+        "Best for building prompts for agentic products and workflows",
       features: [
-        "Up to 10,000 conversations/month",
-        "Advanced analytics & insights",
-        "Priority support",
-        "Premium AI models",
-        "Custom integrations",
-        "Team collaboration",
-        "White-label options"
+        "Daily Tests: 1,000",
+        "LLM Credits: Unlimited*",
+        "Compare up to 4 prompt sets at a time",
+        "Access to thinking models",
+        "View usage data"
       ],
-      popular: true
+      popular: false
     },
     {
-      name: "Enterprise",
-      price: "Custom",
-      period: "",
-      description: "For large organizations with custom requirements",
+      name: "Pro",
+      price: "$29.95",
+      period: "/month",
+      description:
+        "Perfect for high-frequency users and for building complex production-grade AI apps",
       features: [
-        "Unlimited conversations",
-        "Custom analytics dashboard",
-        "Dedicated account manager",
-        "On-premise deployment",
-        "Custom AI model training",
-        "Advanced security features",
-        "SLA guarantee"
+        "Daily Tests: Unlimited",
+        "LLM Credits: Unlimited*",
+        "Compare up to 4 prompt sets at a time",
+        "Access to thinking models",
+        "View usage data"
       ],
       popular: false
     }
@@ -57,7 +56,7 @@ export default function PricingSection() {
     <section className="py-20 px-4 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Simple, transparent pricing</h2>
+          <h2 className="text-4xl font-bold mb-4">Pricing</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Choose the perfect plan for your needs. Upgrade or downgrade at any time.
           </p>
@@ -65,8 +64,8 @@ export default function PricingSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className={`relative ${plan.popular ? 'border-blue-500 shadow-lg scale-105' : 'border-gray-200'}`}
             >
               {plan.popular && (
@@ -91,16 +90,17 @@ export default function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                <Button 
+                <Button
                   className={`w-full ${plan.popular ? 'bg-blue-600 hover:bg-blue-700' : ''}`}
                   variant={plan.popular ? 'default' : 'outline'}
                 >
-                  {plan.name === 'Enterprise' ? 'Contact Sales' : 'Get Started'}
+                  Get Started
                 </Button>
               </CardContent>
             </Card>
           ))}
         </div>
+        <p className="text-xs text-gray-500 mt-6">* with existing LLM subscription and API key</p>
       </div>
     </section>
   )
