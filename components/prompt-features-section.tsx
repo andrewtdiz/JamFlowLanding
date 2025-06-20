@@ -54,7 +54,7 @@ export default function PromptFeaturesSection() {
           <div className="w-80">
             <div className="flex flex-col items-end gap-2">
               {features.map((feature, index) => (
-                <Card onClick={() => setSelectedFeature(index)} className={`relative overflow-hidden text-center w-full pl-3 mr-8 mb-4 border-none shadow-none  ${index === selectedFeature ? '' : 'hover:border-blue-200'}`} style={{ boxShadow: index === selectedFeature ? 'rgba(9, 30, 66, 0.15) 0px 0.5rem 1rem 0px' : '' }}>
+                <Card key={index} onClick={() => setSelectedFeature(index)} className={`relative overflow-hidden text-center w-full pl-3 mr-8 mb-4 border-none shadow-none  ${index === selectedFeature ? '' : 'hover:border-blue-200'}`} style={{ boxShadow: index === selectedFeature ? 'rgba(9, 30, 66, 0.15) 0px 0.5rem 1rem 0px' : '' }}>
                   {index === selectedFeature && <div className="absolute w-[0.375rem] h-full left-0 top-0 bg-blue-400"></div>}
                   <CardHeader className="p-3 pt-4 pb-1">
                     <CardTitle className="text-xl font-semibold text-left">{feature.title}</CardTitle>

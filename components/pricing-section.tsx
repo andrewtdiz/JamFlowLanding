@@ -1,60 +1,91 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Check, ArrowRight } from "lucide-react"
+import CheckoutButton from "./checkout-button"
+
+const plans = [
+  {
+    name: "Free",
+    price: "$0",
+    period: "/month",
+    description: "For simple prompt improvements or trying JamFlow for the first time!",
+    credits: {
+      dailyTests: "20",
+      llmCredits: "5,000"
+    },
+    features: [
+      "Compare multiple prompt sets",
+      "View LLM usage data",
+      "Shareable links",
+    ],
+    priceId: null, // Free plan doesn't need a price ID
+    button: (
+      <Button
+        variant="link"
+        className="w-full h-20 text-2xl py-4 px-8 rounded-xl font-normal flex items-center justify-center space-x-2 transition-colors mt-auto"
+      >
+        <span>Get Started</span>
+        <ArrowRight className="w-6 h-6 ml-2" />
+      </Button>
+    ),
+    popular: false
+  },
+  {
+    name: "Premium",
+    price: "$9.95",
+    period: "/month",
+    description: "For teams looking to supercharge their prompt development",
+    credits: {
+      dailyTests: "1,000",
+      llmCredits: "Unlimited*"
+    },
+    features: [
+      "Compare multiple prompt sets",
+      "View LLM usage data",
+      "Shareable links",
+      "Access to thinking models",
+    ],
+    priceId: "price_1Rc7a0I2pAdLD0LjDenJoB6T", // Replace with your actual Premium plan price ID
+    button: (
+      <CheckoutButton
+        className="w-full h-20 text-2xl bg-blue-600 hover:bg-blue-700 text-white py-4 px-8 rounded-xl font-semibold flex items-center justify-center space-x-2 transition-colors mt-auto disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Get Premium
+      </CheckoutButton>
+    ),
+    popular: true
+  },
+  {
+    name: "Pro",
+    price: "$29.95",
+    period: "/month",
+    description: "For high-frequency users building production-grade AI apps",
+    credits: {
+      dailyTests: "Unlimited",
+      llmCredits: "Unlimited*"
+    },
+    features: [
+      "Compare multiple prompt sets",
+      "View LLM usage data",
+      "Shareable links",
+      "Access to thinking models",
+    ],
+    priceId: "price_1Rc7cnI2pAdLD0LjYm762IV0", // Replace with your actual Pro plan price ID
+    button: (
+      <CheckoutButton
+        className="w-full h-20 text-2xl bg-blue-600 hover:bg-blue-700 text-white py-4 px-8 rounded-xl font-semibold flex items-center justify-center space-x-2 transition-colors mt-auto disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Get Pro
+      </CheckoutButton>
+    ),
+    popular: false
+  }
+]
 
 export default function PricingSection() {
-  const plans = [
-    {
-      name: "Free",
-      price: "$0",
-      period: "/month",
-      description: "For simple prompt improvements or trying JamFlow for the first time!",
-      credits: {
-        dailyTests: "20",
-        llmCredits: "5,000"
-      },
-      features: [
-        "Compare up to 4 prompt sets at a time",
-        "Access to non-thinking models",
-        "View usage data"
-      ],
-      popular: false
-    },
-    {
-      name: "Premium",
-      price: "$9.95",
-      period: "/month",
-      description: "For building prompts for agentic products and workflows",
-      credits: {
-        dailyTests: "1,000",
-        llmCredits: "Unlimited*"
-      },
-      features: [
-        "Compare up to 4 prompt sets at a time",
-        "Access to thinking models",
-        "View usage data"
-      ],
-      popular: true
-    },
-    {
-      name: "Pro",
-      price: "$29.95",
-      period: "/month",
-      description: "For high-frequency users and for building complex production-grade AI apps",
-      credits: {
-        dailyTests: "Unlimited",
-        llmCredits: "Unlimited*"
-      },
-      features: [
-        "Compare up to 4 prompt sets at a time",
-        "Access to thinking models",
-        "View usage data"
-      ],
-      popular: false
-    }
-  ]
-
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="container mx-auto">
@@ -101,36 +132,32 @@ export default function PricingSection() {
 
                 {/* Description */}
                 <div className="mb-8">
-                  <p className="text-gray-600 text-lg leading-relaxed">{plan.description}</p>
+                  <p className="text-gray-800 text-lg leading-relaxed">{plan.description}</p>
                 </div>
 
                 {/* Features Section */}
                 <div className="mb-8 flex-grow">
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Features</h4>
+                  <h4 className="font-semibold text-gray-800 mb-2">Features</h4>
                   <ul className="space-y-3">
                     {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start space-x-3">
+                      <li key={featureIndex} className="flex items-start space-x-1">
                         <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-600 text-lg">{feature}</span>
+                        <span className="text-gray-800">{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* CTA Button */}
-                <Button
-                  className="w-full h-20 text-2xl bg-blue-600 hover:bg-blue-700 text-white py-4 px-8 rounded-xl font-semibold flex items-center justify-center space-x-2 transition-colors mt-auto"
-                >
-                  <span>Get Started</span>
-                  <ArrowRight className="w-24! h-24!" />
-                </Button>
+                {plan.button}
+
               </CardContent>
             </Card>
           ))}
         </div>
 
         <p className="text-sm text-gray-500 text-center mt-8">
-          * with existing LLM subscription and API key
+          * with your external LLM API key connected
         </p>
       </div>
     </section>
