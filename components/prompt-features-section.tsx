@@ -17,7 +17,7 @@ import {
 
 const features = [
   {
-    title: "Iterate 20x faster.",
+    title: "Iterate 10x faster.",
     description: "Run multiple models and prompt variations simultaneously.",
   },
   {
@@ -32,17 +32,16 @@ const features = [
 ]
 
 export default function PromptFeaturesSection() {
-  const [api, setApi] = useState<CarouselApi>()
+  const [selectedFeature, setSelectedFeature] = useState<number>(0)
 
   useEffect(() => {
-    if (!api) return
-    const id = setInterval(() => api.scrollNext(), 4000)
+    const id = setInterval(() => setSelectedFeature((selectedFeature + 1) % features.length), 2000)
     return () => clearInterval(id)
-  }, [api])
+  }, [selectedFeature])
 
   return (
     <section className="py-20 px-4 bg-white">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex flex-col items-center">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
             Improve prompts faster, without code
@@ -51,25 +50,27 @@ export default function PromptFeaturesSection() {
             No more copy-pasting between browser tabs. With JamFlow, compare multiple prompts and models in one seamless interface.
           </p>
         </div>
-        <Carousel setApi={setApi} className="max-w-xl mx-auto">
-          <CarouselContent>
-            {features.map((feature, index) => (
-              <CarouselItem key={index}>
-                <Card className="text-center">
-                  <CardHeader>
-                    <div className="h-40 bg-gray-200 rounded-lg mb-4" />
-                    <CardTitle className="text-xl">{feature.title}</CardTitle>
+        <div className="w-full flex justify-center">
+          <div className="w-80">
+            <div className="flex flex-col items-end gap-2">
+              {features.map((feature, index) => (
+                <Card onClick={() => setSelectedFeature(index)} className={`relative overflow-hidden text-center w-full pl-3 mr-8 mb-4 border-none shadow-none  ${index === selectedFeature ? '' : 'hover:border-blue-200'}`} style={{ boxShadow: index === selectedFeature ? 'rgba(9, 30, 66, 0.15) 0px 0.5rem 1rem 0px' : '' }}>
+                  {index === selectedFeature && <div className="absolute w-[0.375rem] h-full left-0 top-0 bg-blue-400"></div>}
+                  <CardHeader className="p-3 pt-4 pb-1">
+                    <CardTitle className="text-xl font-semibold text-left">{feature.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-gray-600">
+                  <CardContent className="p-3 pt-0">
+                    <CardDescription className="text-gray-900 text-left py-1">
                       {feature.description}
                     </CardDescription>
                   </CardContent>
                 </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+              ))}
+            </div>
+          </div>
+          <div className="w-[36rem] h-[26rem] bg-gray-200 rounded-lg">
+          </div>
+        </div>
       </div>
     </section>
   )

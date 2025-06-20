@@ -10,6 +10,7 @@ import FeaturesSection from "./features-section"
 import PricingSection from "./pricing-section"
 import Footer from "./footer"
 import FAQSection from "./faq"
+import CTASection from "./cta-section"
 
 export default function LandingPage() {
   return (
@@ -30,8 +31,9 @@ export default function LandingPage() {
       <AnalyticsDashboardSection />
       <IteratePromptsSection />
       <PromptFeaturesSection />
-      <FeaturesSection />
       <PricingSection />
+      <FeaturesSection />
+      <CTASection />
       <Footer />
     </div>
   )

@@ -45,7 +45,7 @@ const faq = [
         question: "When will you add support for my preferred model/provider?",
         answer: (
             <>
-                If you don't see a preferred model/provider, feel free to contact us and we can add support for it.
+                If you don't see your preferred model/provider, feel free to contact us and we can add support for it.
                 <br />
                 <br />
                 You can contact us on 
@@ -77,13 +77,13 @@ const FAQSection = () => {
                     Frequently Asked Questions
                 </h2>
 
-                <Accordion type="single" className="max-auto w-full max-w-xl" value={`${activeIndex}`} onValueChange={(value) => setActiveIndex(Number(value))}>
+                <Accordion type="single" className="max-auto w-full max-w-2xl" value={`${activeIndex}`} onValueChange={(value) => setActiveIndex(Number(value))}>
                     {faq.map(({ question, answer }, index) => (
                         <AccordionItem key={question} value={`${index}`}>
                             <AccordionTrigger className={`text-left text-lg py-6 font-semibold`}>
                                 {question}
                             </AccordionTrigger>
-                            <AccordionContent className="pl-[0.125rem]">{answer}</AccordionContent>
+                            <AccordionContent className="pl-[0.125rem] text-lg">{answer}</AccordionContent>
                         </AccordionItem>
                     ))}
                 </Accordion>
