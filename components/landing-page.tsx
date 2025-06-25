@@ -17,7 +17,9 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
+
       <HeroSection />
+
       <ProvidersSection />
       {/* <CompanyLogos /> */}
 
@@ -28,7 +30,9 @@ export default function LandingPage() {
         </div>
       </section> */}
 
-      <PromptFeaturesSection />
+      <div id="features">
+        <PromptFeaturesSection />
+      </div>
       <div id="faq">
         <FAQSection />
       </div>
@@ -38,9 +42,7 @@ export default function LandingPage() {
       <div id="pricing">
         <PricingSection />
       </div>
-      <div id="features">
-        <FeaturesSection />
-      </div>
+      <FeaturesSection />
       <CTASection />
       <Footer />
     </div>

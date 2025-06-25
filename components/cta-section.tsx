@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge"
 import {
   FileText,
@@ -9,7 +8,11 @@ import {
   Bot,
   Zap,
   Shield,
-  Target
+  Target,
+  GitBranch,
+  TestTube,
+  Code,
+  TrendingUp
 } from "lucide-react"
 import { Button } from "./ui/button";
 
@@ -18,42 +21,37 @@ export default function CTASection() {
     <section className="container mx-auto px-4">
 
       < div className="bg-gradient-to-r from-blue-500 to-cyan-400 rounded-3xl p-12 text-center text-white mb-16" >
-        <h3 className="text-4xl font-bold mb-4">Minutes to magic.</h3>
+        <h3 className="text-4xl font-bold mb-4">Start prompting in seconds.</h3>
         <p className="text-xl mb-8 opacity-90">
-          Self-host or go cloud and get started in minutes.
+          No setup, no code required. Compare prompts and models instantly.
         </p>
         <div className="space-y-4">
           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
-            Get Started (it's free)
+            Try JamFlow Free
           </Button>
-          <div>
-            <button className="text-white underline hover:no-underline">
-              Schedule a Demo
-            </button>
-          </div>
         </div>
 
         {/* Feature Icons */}
         <div className="flex justify-center items-center space-x-8 mt-12 opacity-80">
           <div className="flex items-center space-x-2">
-            <CheckCircle className="w-5 h-5" />
-            <span className="text-sm">Chat Replays</span>
+            <GitBranch className="w-5 h-5" />
+            <span className="text-sm">Compare Prompts</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <TestTube className="w-5 h-5" />
+            <span className="text-sm">A/B Testing</span>
           </div>
           <div className="flex items-center space-x-2">
             <BarChart3 className="w-5 h-5" />
-            <span className="text-sm">Analytics</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Target className="w-5 h-5" />
-            <span className="text-sm">Topic Classification</span>
+            <span className="text-sm">Performance Analytics</span>
           </div>
           <div className="flex items-center space-x-2">
             <Bot className="w-5 h-5" />
-            <span className="text-sm">Agent Tracing</span>
+            <span className="text-sm">Parallel Testing</span>
           </div>
           <div className="flex items-center space-x-2">
             <Zap className="w-5 h-5" />
-            <span className="text-sm">Custom Dashboards</span>
+            <span className="text-sm">Instant Results</span>
           </div>
         </div>
       </div >
