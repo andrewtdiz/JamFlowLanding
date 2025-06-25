@@ -31,7 +31,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 text-sm">
-            © 2024 JamFlow.ai. All rights reserved.
+            © 2025 JamFlow.ai. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
