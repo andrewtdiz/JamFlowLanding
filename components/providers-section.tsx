@@ -32,9 +32,9 @@ export default function ProvidersSection() {
         <section className="py-12 px-4 bg-gray-50">
             <div className="container mx-auto max-w-6xl text-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    Works with all major LLMs,{" "}
+                    Access all major LLMs,{" "}
                     <br className="hidden md:block" />
-                    no subscriptions required
+                    No setup. No subscriptions.
                 </h2>
 
                 <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
