@@ -34,7 +34,7 @@ export default function ProvidersSection() {
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                     Access all major LLMs,{" "}
                     <br className="hidden md:block" />
-                    No setup, no subscriptions.
+                    no setup, no subscriptions.
                 </h2>
 
                 <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
