@@ -29,12 +29,18 @@ export default function LandingPage() {
       </section> */}
 
       <PromptFeaturesSection />
-      <FAQSection />
+      <div id="faq">
+        <FAQSection />
+      </div>
       {/* <DebugLLMAgentsSection /> */}
       {/* <AnalyticsDashboardSection /> */}
       {/* <IteratePromptsSection /> */}
-      <PricingSection />
-      <FeaturesSection />
+      <div id="pricing">
+        <PricingSection />
+      </div>
+      <div id="features">
+        <FeaturesSection />
+      </div>
       <CTASection />
       <Footer />
     </div>

@@ -12,16 +12,16 @@ export default function Navigation() {
           <span className="font-bold text-xl">JamFlow</span>
         </div>
         <div className="hidden md:flex items-center space-x-10">
-          <a href="#" className="text-gray-800 hover:text-gray-900">
+          <a href="#features" className="text-gray-800 hover:text-gray-900 transition-colors">
             Features
           </a>
-          <a href="#" className="text-gray-800 hover:text-gray-900">
+          <a href="#pricing" className="text-gray-800 hover:text-gray-900 transition-colors">
             Pricing
           </a>
-          <a href="#" className="text-gray-800 hover:text-gray-900">
+          <a href="#" className="text-gray-800 hover:text-gray-900 transition-colors">
             Docs
           </a>
-          <a href="#" className="text-gray-800 hover:text-gray-900">
+          <a href="#faq" className="text-gray-800 hover:text-gray-900 transition-colors">
             Support
           </a>
         </div>
