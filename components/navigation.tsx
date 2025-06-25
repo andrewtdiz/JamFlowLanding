@@ -18,9 +18,6 @@ export default function Navigation() {
           <a href="#pricing" className="text-gray-800 hover:text-gray-900 transition-colors">
             Pricing
           </a>
-          <a href="#" className="text-gray-800 hover:text-gray-900 transition-colors">
-            Docs
-          </a>
           <a href="#faq" className="text-gray-800 hover:text-gray-900 transition-colors">
             Support
           </a>

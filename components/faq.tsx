@@ -21,7 +21,7 @@ const faq = [
         question: "What does the free plan include?",
         answer: (
             <>
-                The free plan includes up to 10,000 non-thinking model tokens in + out per day.
+                The free plan includes up to 100 prompt runs.
             </>
         ),
     },
@@ -49,7 +49,7 @@ const faq = [
                 <br />
                 <br />
                 You can contact us on
-                <a className="text-blue-600 hover:underline ml-1" href="https://discord.com/invite/jamflow" target="_blank" rel="noopener noreferrer">Discord</a> or
+                <a className="text-blue-600 hover:underline ml-1" href="https://discord.gg/pf4qDSGAhX" target="_blank" rel="noopener noreferrer">Discord</a> or
                 <a className="text-blue-600 hover:underline ml-1" href="https://x.com/jamflow" target="_blank" rel="noopener noreferrer">Twitter</a>.
             </>
         ),
@@ -58,8 +58,8 @@ const faq = [
         question: "I have another question",
         answer: (
             <>
-                Feel free to contact us on
-                <a className="text-blue-600 hover:underline ml-1" href="https://discord.com/invite/jamflow" target="_blank" rel="noopener noreferrer">Discord</a> or
+                Let us know on
+                <a className="text-blue-600 hover:underline ml-1" href="https://discord.gg/pf4qDSGAhX" target="_blank" rel="noopener noreferrer">Discord</a> or
                 <a className="text-blue-600 hover:underline ml-1" href="https://x.com/jamflow" target="_blank" rel="noopener noreferrer">Twitter</a>.
             </>
         ),

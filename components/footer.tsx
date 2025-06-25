@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="font-bold text-xl">JamFlow</span>
             </div>
             <p className="text-gray-600 text-sm">
-              Building the future of conversational AI with advanced chatbot solutions for modern businesses.
+              Supercharge your prompt development.
             </p>
           </div>
 
@@ -22,32 +22,9 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Integrations</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">API</a></li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h3 className="font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Support</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Status</a></li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h3 className="font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li><a href="#" className="hover:text-gray-900 transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Privacy</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Terms</a></li>
+              <li><a href="#features" className="hover:text-gray-900 transition-colors">Features</a></li>
+              <li><a href="#pricing" className="hover:text-gray-900 transition-colors">Pricing</a></li>
+              <li><a href="#faq" className="hover:text-gray-900 transition-colors">FAQ</a></li>
             </ul>
           </div>
         </div>

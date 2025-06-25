@@ -15,7 +15,7 @@ export default function PricingSection() {
         llmCredits: "5,000"
       },
       features: [
-        "Compare multiple prompt sets",
+        "Compare 2 prompt sets",
         "View LLM usage data",
         "Shareable links",
       ],
@@ -32,7 +32,7 @@ export default function PricingSection() {
         llmCredits: "Unlimited*"
       },
       features: [
-        "Compare multiple prompt sets",
+        "Compare 3 prompt sets",
         "View LLM usage data",
         "Shareable links",
         "Access to thinking models",
