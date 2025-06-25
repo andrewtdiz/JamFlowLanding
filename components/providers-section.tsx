@@ -32,14 +32,14 @@ export default function ProvidersSection() {
         <section className="py-12 px-4 bg-gray-50">
             <div className="container mx-auto max-w-6xl text-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    Instantly test prompts{" "}
+                    Works with all major LLMs,{" "}
                     <br className="hidden md:block" />
-                    across major LLMs
+                    no subscriptions required
                 </h2>
 
                 <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
-                    JamFlow works instantly - without a subscription or code.
-                    <br /> No technical setup, just immediate results.
+                    JamFlow works instantly, without LLM subscriptions or code.
+                    <br /> No setup needed, just immediate results.
                 </p>
 
                 <div className="flex gap-4 items-center justify-center">
