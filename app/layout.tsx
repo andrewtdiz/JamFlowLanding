@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'JamFlow.ai - AI Chatbot Platform',
+  title: 'JamFlow',
   description: 'Build, deploy, and scale intelligent chatbots with JamFlow.ai advanced AI platform.',
   generator: 'JamFlow.ai',
   icons: {

@@ -19,7 +19,8 @@ export default function PricingSection() {
         "Access to non-thinking models",
         "View usage data"
       ],
-      popular: false
+      popular: false,
+      buttonText: "Try for Free"
     },
     {
       name: "Premium",
@@ -35,7 +36,8 @@ export default function PricingSection() {
         "Access to thinking models",
         "View usage data"
       ],
-      popular: true
+      popular: true,
+      buttonText: "Get Started"
     },
     {
       name: "Pro",
@@ -51,7 +53,8 @@ export default function PricingSection() {
         "Access to thinking models",
         "View usage data"
       ],
-      popular: false
+      popular: false,
+      buttonText: "Get Started"
     }
   ]
 
@@ -121,7 +124,7 @@ export default function PricingSection() {
                 <Button
                   className="w-full h-20 text-2xl bg-blue-600 hover:bg-blue-700 text-white py-4 px-8 rounded-xl font-semibold flex items-center justify-center space-x-2 transition-colors mt-auto"
                 >
-                  <span>Get Started</span>
+                  <span>{plan.buttonText}</span>
                   <ArrowRight className="w-24! h-24!" />
                 </Button>
               </CardContent>

@@ -12,7 +12,7 @@ export default function HeroSection() {
                     </Badge>
 
                     <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-                        Write better prompts, faster
+                        Make better prompts, faster
                     </h1>
                     <p className="text-xl text-gray-600 mb-8 max-w-2xl md:mx-0 mx-auto">
                         Compare prompts and models in one place,<br />
@@ -30,11 +30,11 @@ export default function HeroSection() {
                 </div>
 
                 {/* Hero Dashboard Image */}
-                <div className="relative md:w-1/2">
-                    <div className="rounded-2xl p-4">
+                <div className="relative md:w-3/4">
+                    <div className="rounded-xl p-4">
                         <div className="text-gray-400 text-sm text-center mb-4"></div>
                         <img
-                            src="/hero-dashboard.jpg"
+                            src="/hero.png"
                             alt="Chatbot Analytics Dashboard"
                             className="w-full h-auto object-cover rounded-xl shadow-lg"
                         />
