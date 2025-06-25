@@ -16,7 +16,7 @@ export default function FeaturesSection() {
       buttonColor: "bg-blue-600 text-white"
     },
     {
-      title: "Customer Support", 
+      title: "Customer Support",
       description: "Build customer-facing chatbots that understand your docs and provide accurate responses. Track satisfaction and improve continuously.",
       chatExample: {
         question: "How do I upgrade my subscription?",
@@ -36,7 +36,7 @@ export default function FeaturesSection() {
         document: "Creating charts...",
         buttonText: "Include month-over-month"
       },
-      bgColor: "bg-purple-50", 
+      bgColor: "bg-purple-50",
       buttonColor: "bg-purple-600 text-white"
     }
   ]

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import {
   Carousel,
   CarouselContent,
@@ -19,15 +20,24 @@ const features = [
   {
     title: "Iterate 10x faster.",
     description: "Run multiple models and prompt variations simultaneously.",
+    image: "/images/iterate-faster.png",
+    width: 576,
+    height: 416,
   },
   {
     title: "No code required.",
     description: "Add prompts and evaluations, select a model, and go.",
+    image: "providers.png",
+    width: 874,
+    height: 852,
   },
   {
     title: "Prompt with clarity",
     description:
       "Modify Temperature or Top\u2011P and see token counts, latency, and cost.",
+    image: "prompt-clarity.png",
+    width: 1760,
+    height: 880,
   },
 ]
 
@@ -35,7 +45,7 @@ export default function PromptFeaturesSection() {
   const [selectedFeature, setSelectedFeature] = useState<number>(0)
 
   useEffect(() => {
-    const id = setInterval(() => setSelectedFeature((selectedFeature + 1) % features.length), 2000)
+    const id = setInterval(() => setSelectedFeature((selectedFeature + 1) % features.length), 5000)
     return () => clearInterval(id)
   }, [selectedFeature])
 
@@ -68,7 +78,14 @@ export default function PromptFeaturesSection() {
               ))}
             </div>
           </div>
-          <div className="w-[36rem] h-[26rem] bg-gray-200 rounded-lg">
+          <div className="w-[36rem] h-[26rem] rounded-lg overflow-hidden flex items-center justify-center">
+            <Image
+              src={features[selectedFeature].image}
+              alt={features[selectedFeature].title}
+              width={features[selectedFeature].width}
+              height={features[selectedFeature].height}
+              className="max-w-full max-h-full object-contain shadow-xl rounded-lg"
+            />
           </div>
         </div>
       </div>
