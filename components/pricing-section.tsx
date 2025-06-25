@@ -15,7 +15,7 @@ export default function PricingSection() {
         llmCredits: "5,000"
       },
       features: [
-        "Compare up to 4 prompt sets at a time",
+        "Compare 2 prompt sets at a time",
         "Access to non-thinking models",
         "View usage data"
       ],
