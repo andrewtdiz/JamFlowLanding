@@ -50,7 +50,7 @@ const faq = [
                 <br />
                 You can contact us on
                 <a className="text-blue-600 hover:underline ml-1" href="https://discord.gg/pf4qDSGAhX" target="_blank" rel="noopener noreferrer">Discord</a> or
-                <a className="text-blue-600 hover:underline ml-1" href="https://x.com/jamflow" target="_blank" rel="noopener noreferrer">Twitter</a>.
+                <a className="text-blue-600 hover:underline ml-1" href="https://x.com/jamflow" target="_blank" rel="noopener noreferrer">X (Twitter)</a>.
             </>
         ),
     },
@@ -60,7 +60,7 @@ const faq = [
             <>
                 Let us know on
                 <a className="text-blue-600 hover:underline ml-1" href="https://discord.gg/pf4qDSGAhX" target="_blank" rel="noopener noreferrer">Discord</a> or
-                <a className="text-blue-600 hover:underline ml-1" href="https://x.com/jamflow" target="_blank" rel="noopener noreferrer">Twitter</a>.
+                <a className="text-blue-600 hover:underline ml-1" href="https://x.com/jamflow" target="_blank" rel="noopener noreferrer">X (Twitter)</a>.
             </>
         ),
     },

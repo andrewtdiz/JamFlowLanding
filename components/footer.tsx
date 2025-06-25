@@ -34,14 +34,11 @@ export default function Footer() {
             © 2025 JamFlow.ai. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              Twitter
+            <a href="https://x.com/jamflow" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
+              X (Twitter)
             </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              LinkedIn
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              GitHub
+            <a href="https://discord.gg/pf4qDSGAhX" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
+              Discord
             </a>
           </div>
         </div>
