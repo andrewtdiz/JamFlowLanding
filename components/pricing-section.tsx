@@ -15,9 +15,9 @@ export default function PricingSection() {
         llmCredits: "5,000"
       },
       features: [
-        "Compare 2 prompt sets at a time",
-        "Access to non-thinking models",
-        "View usage data"
+        "Compare multiple prompt sets",
+        "View LLM usage data",
+        "Shareable links",
       ],
       popular: false,
       buttonText: "Try for Free"
@@ -26,15 +26,16 @@ export default function PricingSection() {
       name: "Premium",
       price: "$9.95",
       period: "/month",
-      description: "For building prompts for agentic products and workflows",
+      description: "For teams looking to supercharge their prompt development",
       credits: {
         dailyTests: "1,000",
         llmCredits: "Unlimited*"
       },
       features: [
-        "Compare up to 4 prompt sets at a time",
+        "Compare multiple prompt sets",
+        "View LLM usage data",
+        "Shareable links",
         "Access to thinking models",
-        "View usage data"
       ],
       popular: true,
       buttonText: "Get Started"
@@ -49,9 +50,10 @@ export default function PricingSection() {
         llmCredits: "Unlimited*"
       },
       features: [
-        "Compare up to 4 prompt sets at a time",
+        "Compare multiple prompt sets",
+        "View LLM usage data",
+        "Shareable links",
         "Access to thinking models",
-        "View usage data"
       ],
       popular: false,
       buttonText: "Get Started"
