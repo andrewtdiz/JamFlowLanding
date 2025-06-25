@@ -42,7 +42,7 @@ export default function LandingPage() {
       <div id="pricing">
         <PricingSection />
       </div>
-      <FeaturesSection />
+      {/* <FeaturesSection /> */}
       <CTASection />
       <Footer />
     </div>
