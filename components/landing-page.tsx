@@ -11,14 +11,16 @@ import PricingSection from "./pricing-section"
 import Footer from "./footer"
 import FAQSection from "./faq"
 import CTASection from "./cta-section"
+import ProvidersSection from "./providers-section"
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       <HeroSection />
+      <ProvidersSection />
       {/* <CompanyLogos /> */}
-      
+
       {/* Analytics Showcase Section */}
       {/* <section className="py-20 px-4 bg-white">
         <div className="container mx-auto">

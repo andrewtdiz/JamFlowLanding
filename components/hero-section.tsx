@@ -5,14 +5,14 @@ import { Badge } from "@/components/ui/badge"
 export default function HeroSection() {
     return (
         <section className="py-20 px-4 relative overflow-hidden">
-            <div className="container mx-auto relative z-20 flex flex-col md:flex-row items-center gap-12">
-                <div className="md:w-1/2 text-center md:text-left">
+            <div className="container mx-auto relative z-20 flex flex-col md:flex-row items-center gap-6">
+                <div className="md:w-1/3 text-center md:text-left">
                     <Badge className="mb-4 bg-blue-50 text-blue-700 border-blue-200 transition-shadow hover:shadow-lg hover:shadow-blue-200/70 hover:bg-blue-50 hover:text-blue-700">
                         🚀 Gemini 2.5 Pro Now Available!
                     </Badge>
 
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-                        Make better prompts, faster
+                    <h1 className="text-2xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+                        Make better prompts faster
                     </h1>
                     <p className="text-xl text-gray-600 mb-8 max-w-2xl md:mx-0 mx-auto">
                         Compare prompts and models in one place,<br />
@@ -30,11 +30,11 @@ export default function HeroSection() {
                 </div>
 
                 {/* Hero Dashboard Image */}
-                <div className="relative md:w-3/4">
+                <div className="relative md:w-2/3">
                     <div className="rounded-xl p-4">
                         <div className="text-gray-400 text-sm text-center mb-4"></div>
                         <img
-                            src="/hero.png"
+                            src="/widescreen.png"
                             alt="Chatbot Analytics Dashboard"
                             className="w-full h-auto object-cover rounded-xl shadow-lg"
                         />
