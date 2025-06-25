@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 
 export default function HeroSection() {
     return (
-        <section className="py-20 px-4 relative overflow-hidden">
+        <section className="py-20 px-4 relative overflow-hidden mt-20">
             <div className="container mx-auto relative z-20 flex flex-col md:flex-row items-center gap-6">
                 <div className="md:w-1/3 text-center md:text-left">
                     <Badge className="mb-4 bg-blue-50 text-blue-700 border-blue-200 transition-shadow hover:shadow-lg hover:shadow-blue-200/70 hover:bg-blue-50 hover:text-blue-700">

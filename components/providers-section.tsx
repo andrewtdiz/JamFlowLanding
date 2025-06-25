@@ -53,7 +53,7 @@ export default function ProvidersSection() {
                                 alt={`${provider.name} logo`}
                                 width={provider.width}
                                 height={provider.height}
-                                className="object-contain p-6 transition-opacity duration-200"
+                                className="object-contain border-2 border-gray-200 rounded-lg p-6 transition-opacity duration-200"
                             />
                         </div>
                     ))}

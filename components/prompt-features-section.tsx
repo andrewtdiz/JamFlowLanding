@@ -20,9 +20,9 @@ const features = [
   {
     title: "Iterate 10x faster.",
     description: "Run multiple models and prompt variations simultaneously.",
-    image: "/images/iterate-faster.png",
-    width: 576,
-    height: 416,
+    image: "widescreen-.png",
+    width: 1532,
+    height: 1250,
   },
   {
     title: "No code required.",
@@ -61,16 +61,16 @@ export default function PromptFeaturesSection() {
           </p>
         </div>
         <div className="w-full flex justify-center">
-          <div className="w-80">
+          <div className="w-64">
             <div className="flex flex-col items-end gap-2">
               {features.map((feature, index) => (
-                <Card key={index} onClick={() => setSelectedFeature(index)} className={`relative overflow-hidden text-center w-full pl-3 mr-8 mb-4 border-none shadow-none  ${index === selectedFeature ? '' : 'hover:border-blue-200'}`} style={{ boxShadow: index === selectedFeature ? 'rgba(9, 30, 66, 0.15) 0px 0.5rem 1rem 0px' : '' }}>
+                <Card key={index} onClick={() => setSelectedFeature(index)} className={`relative overflow-hidden text-center w-full pl-3 mr-6 mb-4 border-none shadow-none  ${index === selectedFeature ? '' : 'hover:border-blue-200'}`} style={{ boxShadow: index === selectedFeature ? 'rgba(9, 30, 66, 0.15) 0px 0.5rem 1rem 0px' : '' }}>
                   {index === selectedFeature && <div className="absolute w-[0.375rem] h-full left-0 top-0 bg-blue-400"></div>}
-                  <CardHeader className="p-3 pt-4 pb-1">
-                    <CardTitle className="text-xl font-semibold text-left">{feature.title}</CardTitle>
+                  <CardHeader className="p-2 pt-3 pb-1">
+                    <CardTitle className="text-lg font-semibold text-left">{feature.title}</CardTitle>
                   </CardHeader>
-                  <CardContent className="p-3 pt-0">
-                    <CardDescription className="text-gray-900 text-left py-1">
+                  <CardContent className="p-2 pt-0">
+                    <CardDescription className="text-gray-900 text-left py-1 text-sm">
                       {feature.description}
                     </CardDescription>
                   </CardContent>
@@ -78,13 +78,13 @@ export default function PromptFeaturesSection() {
               ))}
             </div>
           </div>
-          <div className="w-[36rem] h-[26rem] rounded-lg overflow-hidden flex items-center justify-center">
+          <div className="w-[48rem] h-[36rem] rounded-lg overflow-hidden flex items-center justify-center ml-8">
             <Image
               src={features[selectedFeature].image}
               alt={features[selectedFeature].title}
               width={features[selectedFeature].width}
               height={features[selectedFeature].height}
-              className="max-w-full max-h-full object-contain shadow-xl rounded-lg"
+              className="max-w-full max-h-full object-contain rounded-lg"
             />
           </div>
         </div>
