@@ -17,7 +17,7 @@ export default function PricingSection() {
       features: [
         "Compare 2 prompt sets",
         "View LLM usage data",
-        "Shareable links",
+        // "Shareable links",
       ],
       popular: false,
       buttonText: "Try for Free"
@@ -34,7 +34,7 @@ export default function PricingSection() {
       features: [
         "Compare 3 prompt sets",
         "View LLM usage data",
-        "Shareable links",
+        // "Shareable links",
         "Access to thinking models",
       ],
       popular: true,
@@ -52,7 +52,7 @@ export default function PricingSection() {
       features: [
         "Compare multiple prompt sets",
         "View LLM usage data",
-        "Shareable links",
+        // "Shareable links",
         "Access to thinking models",
       ],
       popular: false,
