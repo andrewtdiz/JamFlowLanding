@@ -11,7 +11,7 @@ const FRONTEND_COLOR = hexToDiscordColor("rgb(167, 54, 199)");
 const COMMIT_MESSAGE = process.env.VERCEL_GIT_COMMIT_MESSAGE;
 
 const message = {
-  content: "<@408700878741176323>",
+  content: "",
   tts: false,
   embeds: [
     {
