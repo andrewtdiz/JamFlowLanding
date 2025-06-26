@@ -15,6 +15,7 @@ import {
   TrendingUp
 } from "lucide-react"
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -26,9 +27,11 @@ export default function CTASection() {
           No setup, no code required. Compare prompts and models instantly.
         </p>
         <div className="space-y-4">
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
-            Try JamFlow Free
-          </Button>
+          <Link href="https://app.jamflow.ai">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
+              Try JamFlow Free
+            </Button>
+          </Link>
         </div>
 
         {/* Feature Icons */}
