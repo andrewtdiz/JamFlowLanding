@@ -21,6 +21,12 @@ export default function ProvidersSection() {
             height: 40
         },
         {
+            name: "Meta",
+            logo: "/svg/meta.svg",
+            width: 120,
+            height: 40
+        },
+        {
             name: "Cerebras",
             logo: "/svg/cerebras.svg",
             width: 120,
