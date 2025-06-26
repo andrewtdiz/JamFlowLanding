@@ -40,7 +40,7 @@ export default function HeroSection() {
                             alt="Chatbot Analytics Dashboard"
                             className="w-full h-auto object-cover rounded-xl shadow-lg"
                         />
-                        <img src="/arrows.png" alt="Chatbot Analytics Dashboard" className="absolute w-auto h-auto object-cover scale-[154%] rounded-xl left-1/2 top-1/2 -translate-x-[49%] -translate-y-1/2" />
+                        <img src="/arrows.png" alt="Chatbot Analytics Dashboard" className="pointer-events-none absolute w-auto h-auto object-cover scale-[154%] rounded-xl left-1/2 top-1/2 -translate-x-[49%] -translate-y-1/2" />
                     </div>
                 </div>
             </div>
