@@ -1,4 +1,5 @@
 import { MessageSquare } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,9 +10,11 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center">
-                <img
+                <Image
                   src="/logo192.png"
                   alt="JamFlow.ai"
+                  width={32}
+                  height={32}
                   className="w-8 h-8 rounded-lg"
                 />
               </div>
@@ -58,18 +61,30 @@ export default function Footer() {
           <p className="text-gray-600 text-sm">
             © 2025 JamFlow.ai. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="flex space-x-12 mt-4 md:mt-0">
             <a
               href="https://x.com/jamflow"
-              className="text-gray-600 hover:text-gray-900 transition-colors"
+              className=""
             >
-              <img src="/svg/x.svg" alt="X (Twitter)" className="w-5 h-5" />
+              <Image
+                src="/svg/x.svg"
+                alt="X (Twitter)"
+                width={20}
+                height={20}
+                className="w-5 h-5 brightness-0 opacity-40 hover:brightness-100 hover:opacity-80 transition-all duration-0"
+              />
             </a>
             <a
               href="https://discord.gg/pf4qDSGAhX"
-              className="text-gray-600 hover:text-gray-900 transition-colors"
+              className=""
             >
-              <img src="/svg/discord.svg" alt="Discord" className="w-5 h-5" />
+              <Image
+                src="/svg/discord.svg"
+                alt="Discord"
+                width={20}
+                height={20}
+                className="w-5 h-5 brightness-0 opacity-40 hover:brightness-100 hover:opacity-80 transition-all duration-0"
+              />
             </a>
           </div>
         </div>
