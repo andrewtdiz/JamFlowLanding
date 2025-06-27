@@ -48,7 +48,7 @@ export default function ProvidersSection() {
                     <br /> No setup needed, just immediate results.
                 </p>
 
-                <div className="flex gap-4 items-center justify-center">
+                <div className="flex gap-8 items-center justify-center">
                     {providers.map((provider) => (
                         <div
                             key={provider.name}
