@@ -19,7 +19,7 @@ export default function PricingSection() {
       description:
         "For simple prompt improvements or trying JamFlow for the first time!",
       credits: {
-        dailyTests: "20",
+        outputs: "100",
         llmCredits: "5,000",
       },
       features: [
@@ -36,7 +36,7 @@ export default function PricingSection() {
       period: "/month",
       description: "For teams looking to supercharge their prompt development",
       credits: {
-        dailyTests: "1,000",
+        outputs: "1,000",
         llmCredits: "Unlimited*",
       },
       features: [
@@ -55,7 +55,7 @@ export default function PricingSection() {
       description:
         "For high-frequency users and for building complex production-grade AI apps",
       credits: {
-        dailyTests: "Unlimited",
+        outputs: "Unlimited",
         llmCredits: "Unlimited*",
       },
       features: [
@@ -63,6 +63,7 @@ export default function PricingSection() {
         "View LLM usage data",
         // "Shareable links",
         "Access to thinking models",
+        "Unlimited credits for non-thinking models",
       ],
       popular: false,
       buttonText: "Get Started",
@@ -116,9 +117,9 @@ export default function PricingSection() {
                   </h4>
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-500">Daily Tests</span>
+                      <span className="text-gray-500">Outputs</span>
                       <span className="font-semibold text-right">
-                        {plan.credits.dailyTests}
+                        {plan.credits.outputs}
                       </span>
                     </div>
                     <div className="flex justify-between items-center">

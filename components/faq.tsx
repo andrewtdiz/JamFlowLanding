@@ -13,7 +13,7 @@ const faq = [
         question: "What is JamFlow and how does it work?",
         answer: (
             <>
-                JamFlow is a web-based prompt experimentation platform designed to speed up model selection and prompt improvement. <br /><br /> It provides fast, visual comparisons of how different prompts and model settings perform without the need to write code or build infrastructure.
+                JamFlow speeds up model selection and prompt improvement. It provides fast, visual comparisons of how different prompts and model settings perform without writing a line of code.
             </>
         ),
     },
@@ -21,7 +21,7 @@ const faq = [
         question: "What does the free plan include?",
         answer: (
             <>
-                The free plan includes up to 100 prompt runs.
+                The free plan includes up to 100 outputs per day.
             </>
         ),
     },
@@ -37,7 +37,7 @@ const faq = [
         question: "Can I use my own API keys?",
         answer: (
             <>
-                Yes! Connecting your existing API keys will give you access to the Unlimited usage tier and premium models.
+                Yes! JamFlow’s paid plans allow you to connect your own API keys to get access to Unlimited usage tiers and premium models.
             </>
         ),
     },
@@ -46,8 +46,6 @@ const faq = [
         answer: (
             <>
                 If you don't see your preferred model/provider, feel free to contact us and we can add support for it.
-                <br />
-                <br />
                 You can contact us on
                 <a className="text-blue-600 hover:underline ml-1" href="https://discord.gg/pf4qDSGAhX" target="_blank" rel="noopener noreferrer">Discord</a> or
                 <a className="text-blue-600 hover:underline ml-1" href="https://x.com/jamflow" target="_blank" rel="noopener noreferrer">X (Twitter)</a>.
@@ -91,11 +89,11 @@ const FAQSection = () => {
 
             <div className="relative z-10 max-w-4xl flex flex-col items-center w-full">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl !leading-[1.15] font-bold tracking-tight text-gray-900 mb-4">
+                    <h2 className="text-3xl md:text-3xl lg:text-4xl !leading-[1.15] font-bold tracking-tight text-gray-900 mb-4">
                         Frequently Asked Questions
                     </h2>
-                    <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                       Still have questions about JamFlow
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Still have questions about JamFlow? We've got answers.
                     </p>
                 </div>
 
@@ -105,12 +103,12 @@ const FAQSection = () => {
                             <AccordionItem
                                 key={question}
                                 value={`${index}`}
-                                className="bg-white/70 backdrop-blur-sm border border-white/50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+                                className="bg-white/70 backdrop-blur-sm border border-white/50 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden"
                             >
-                                <AccordionTrigger className={`text-left text-lg md:text-xl px-8 py-6 font-semibold transition-colors duration-200 hover:no-underline ${activeIndex === index ? 'text-blue-600' : 'text-gray-800 hover:text-blue-600'}`}>
+                                <AccordionTrigger className={`text-left text-md md:text-lg px-8 py-6 font-semibold transition-colors duration-200 hover:no-underline ${activeIndex === index ? 'text-blue-600' : 'text-gray-800 hover:text-blue-600'}`}>
                                     {question}
                                 </AccordionTrigger>
-                                <AccordionContent className="px-8 pb-6 text-lg text-gray-600 leading-relaxed">
+                                <AccordionContent className="px-8 pb-6 text-gray-600 leading-relaxed">
                                     {answer}
                                 </AccordionContent>
                             </AccordionItem>

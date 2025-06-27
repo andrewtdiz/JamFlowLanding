@@ -1,4 +1,4 @@
-import { MessageSquare } from "lucide-react"
+import { MessageSquare } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -9,7 +9,11 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center">
-                <img src="/logo192.png" alt="JamFlow.ai" className="w-8 h-8 rounded-lg" />
+                <img
+                  src="/logo192.png"
+                  alt="JamFlow.ai"
+                  className="w-8 h-8 rounded-lg"
+                />
               </div>
               <span className="font-bold text-xl">JamFlow</span>
             </div>
@@ -22,9 +26,30 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li><a href="#features" className="hover:text-gray-900 transition-colors">Features</a></li>
-              <li><a href="#pricing" className="hover:text-gray-900 transition-colors">Pricing</a></li>
-              <li><a href="#faq" className="hover:text-gray-900 transition-colors">FAQ</a></li>
+              <li>
+                <a
+                  href="#features"
+                  className="hover:text-gray-900 transition-colors"
+                >
+                  Features
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  className="hover:text-gray-900 transition-colors"
+                >
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  className="hover:text-gray-900 transition-colors"
+                >
+                  FAQ
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -34,15 +59,21 @@ export default function Footer() {
             © 2025 JamFlow.ai. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="https://x.com/jamflow" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              X (Twitter)
+            <a
+              href="https://x.com/jamflow"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              <img src="/svg/x.svg" alt="X (Twitter)" className="w-5 h-5" />
             </a>
-            <a href="https://discord.gg/pf4qDSGAhX" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              Discord
+            <a
+              href="https://discord.gg/pf4qDSGAhX"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              <img src="/svg/discord.svg" alt="Discord" className="w-5 h-5" />
             </a>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
