@@ -95,8 +95,7 @@ const FAQSection = () => {
                         Frequently Asked Questions
                     </h2>
                     <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                        Got questions? We've got answers. If you can't find what you're looking for, feel
-                        free to contact our support team.
+                       Still have questions about JamFlow
                     </p>
                 </div>
 

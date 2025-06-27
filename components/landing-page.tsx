@@ -18,7 +18,9 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      <HeroSection />
+      <div id="hero" className="py-20">
+        <HeroSection />
+      </div>
 
       <ProvidersSection />
       {/* <CompanyLogos /> */}
